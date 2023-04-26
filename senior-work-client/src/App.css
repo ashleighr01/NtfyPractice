@@ -18,10 +18,11 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
+  flex: 1;
 }
 
 .App-link {
@@ -34,6 +35,9 @@
   flex-direction: column;
   text-align: left;
   justify-content: left;
+  height: 100vh;
+  width: 200px;
+  position: fixed;
 }
 
 @keyframes App-logo-spin {
@@ -43,4 +47,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#container{ 
+  display: flex;
+  justify-content: space-between;
+}
+
+.graduationphoto{
+  width: 1000px;
+  margin: 0 auto;
 }
