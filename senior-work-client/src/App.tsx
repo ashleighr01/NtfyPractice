@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
+import logo from "./logo.svg"; //how to add files to this directory
 import "./App.css";
 
 function App() {
@@ -15,28 +15,30 @@ function App() {
     <div className="App">
       <div id="container">
         <div id="menu">
-          <p>Menu</p>
-          <p>Info</p>
-        </div>
-        <header className="App-header">
-          <h3>Here is another written piece</h3>
-          <img src={logo} className="App-logo" alt="logo" />
           <img
             className="graduationphoto"
             alt="graduation"
             src="https://thehill.com/wp-content/uploads/sites/2/2022/03/ca_grad_diploma.jpg?w=960&h=540&crop=1"
           />
+          <p>Menu</p>
+          <p>Info</p>
+        </div>
+        <header className="App-header">
+          <h1>Keep track of all the school things!</h1>
+          <img src={logo} className="App-logo" alt="logo" />
+
           <a
             className="App-link"
-            href="https://google.com"
+            href="https://docs.google.com/spreadsheets/d/1PAAaOpAbNnX_pZzeVilrHebkOJtlYvqPIacQhzCuLHc/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
             {message}
-            <h1>Will this be seen?</h1>
+            <h3>Click any of the green!</h3>
           </a>
         </header>
       </div>
+      <footer>This is a just the bottom of the page</footer>
     </div>
   );
 }

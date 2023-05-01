@@ -35,7 +35,7 @@
   flex-direction: column;
   text-align: left;
   justify-content: left;
-  height: 100vh;
+  height: 250px;
   width: 200px;
   position: fixed;
 }
@@ -55,6 +55,13 @@
 }
 
 .graduationphoto{
-  width: 1000px;
-  margin: 0 auto;
+  width: 150px;
+  height: 100px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 50px;
 }
