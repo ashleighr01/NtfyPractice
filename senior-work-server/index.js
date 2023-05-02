@@ -15,7 +15,7 @@ const requestListener = function (req, res) {
     res.setHeader('Content-Type', 'application/json');
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
     res.writeHead(200);
-    res.end('{"message": "Lo siento. Este esta no abierto :("}');
+    res.end('{"message": "Click here to see new scholarships!"}');
 }
 
 const server = http.createServer(requestListener);
