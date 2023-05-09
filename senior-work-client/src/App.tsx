@@ -1,6 +1,7 @@
 import React from "react";
-import logo from "./logo.svg"; //how to add files to this directory
+import WELOGO from "./WELogo.png";
 import "./App.css";
+import { Link } from "react-router-dom";
 
 function App() {
   const [message, setMessage] = React.useState("This is the default message");
@@ -20,12 +21,14 @@ function App() {
             alt="graduation"
             src="https://thehill.com/wp-content/uploads/sites/2/2022/03/ca_grad_diploma.jpg?w=960&h=540&crop=1"
           />
-          <p>Menu</p>
-          <p>Info</p>
+          <Link to="/bonus">Menu</Link>
+          <Link to="/info">Info</Link>
         </div>
         <header className="App-header">
           <h1>Keep track of all the school things!</h1>
-          <img src={logo} className="App-logo" alt="logo" />
+          <div className="App-Logo-Wrapper">
+            <img src={WELOGO} className="App-logo" alt="logo" />
+          </div>
 
           <a
             className="App-link"
